@@ -5,25 +5,30 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>高粱酒1 - 太武山商行</title>
-    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css" rel="stylesheet"
-        integrity="sha384-sRIl4kxILFvY47J16cr9ZwB07vP4J8+LH7qKQnuqkuIAvNWLzeN8tE5YBujZqJLB" crossorigin="anonymous" />
+    <link href="assets/css/bootstrap.min.css" rel="stylesheet" />
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.0.1/css/all.min.css" rel="stylesheet" />
     <style>
-    .products .item {
-        .init-link {
-            color: initial;
-            text-decoration: none;
+    .product-info {
+        font-size: 1.5rem;
+        font-weight: bold;
+        .list-group-item {
+            --bs-list-group-color: rgb(121, 1, 21);
         }
-        .name {
-            max-width: 100%;
-            overflow: hidden;
-            text-overflow: ellipsis;
-            white-space: nowrap;
-            display: inline-block; 
+    }
+    .contact {
+        ul {
+            margin: 1rem;
+            padding: 0;
+            display: flex;
+            gap: 0.5rem;
+            li {
+                list-style: none;
+            }
         }
-        .price {
-            color: #790216;
-            font-weight: 500;
-        }
+    }
+    .init-link {
+        color: initial;
+        text-decoration: none;
     }
     </style>
 </head>
@@ -48,6 +53,7 @@
                 </div> -->
             </div>
         </header>
+        <!-- navbar sticky-top -->
         <div class="nav-scroller py-1 mb-3 border-bottom">
             <nav class="nav nav-underline justify-content-between">
                 <!-- 限量特惠, 最新消息, 年節禮盒, 喜慶宴客, 周邊商品, 熱門酒品 -->
@@ -69,75 +75,103 @@
             </div>
         </div>
         <div class="row g-5">
-            <div class="col-md-4">
+            <div class="col-md-2">
                 <aside class="p-4">
                     <h2>酒類選擇</h2>
-                    <ol class="list-unstyled mb-0">
-                        <li><a href="#">酒類1</a></li>
-                        <li><a href="#">酒類2</a></li>
-                        <li><a href="#">酒類3</a></li>
-                        <li><a href="#">酒類4</a></li>
-                        <li><a href="#">酒類5</a></li>
-                        <li><a href="#">酒類6</a></li>
-                    </ol>
+                    <ul class="list-group list-group-flush mb-0">
+                        <li class="list-group-item"><a href="#">酒類1</a></li>
+                        <li class="list-group-item"><a href="#">酒類2</a></li>
+                        <li class="list-group-item"><a href="#">酒類3</a></li>
+                        <li class="list-group-item"><a href="#">酒類4</a></li>
+                        <li class="list-group-item"><a href="#">酒類5</a></li>
+                        <li class="list-group-item"><a href="#">酒類6</a></li>
+                    </ul>
                 </aside>
             </div>
-            <div class="col-md-8">
-                <div>
-                    <h2>高粱酒品項</h2>
-                </div>
-                <div class="products row">
-                        <div class="item col-4">
-                            <a href="./item.html" class="init-link">
-                                <img src="/assets/example.png" class="img-thumbnail" alt="Image example" />
-                                <h3 class="name">金門酒廠 58度金門高粱酒 馬年限定包裝</h3>
-                                <p class="h5 price">優惠價：$<span class="p-value">530</span></p>
-                                <p class="h6 description">Kinmen Distillery 58% Kinmen Kaoliang Year of the Horse Limited Edition</p>
-                            </a>
+            <div class="col-md-10">
+                <div class="row">
+                    <div class="col-md-6">
+                        <!-- carousel -->
+                        <!-- https://getbootstrap.com/docs/5.3/components/carousel/ -->
+                        <img src="/assets/example.png" class="figure-img img-fluid rounded" alt="Image example" />
+                    </div>
+                    <div class="col-md-6">
+                        <h1 class="name h2">金門酒廠 58度金門高粱酒 馬年限定包裝</h1>
+                        <div class="row">
+                            <div class="col">
+                                <a href="#" class="init-link">
+                                    <ul class="list-group list-group-flush product-info">
+                                        <li class="list-group-item">
+                                            <span class="price">
+                                                優惠價：$<span class="value">530</span>
+                                            </span>
+                                        </li>
+                                        <li class="list-group-item">
+                                            <span class="volume">
+                                                容量：<span class="value">55ML</span>
+                                            </span>
+                                        </li>
+                                        <li class="list-group-item">
+                                            <span class="alchol">
+                                                酒精：<span class="value">0%</span>
+                                            </span>
+                                        </li>
+                                    </ul>
+                                </a>
+                                
+                            </div>
+                            <div class="col">
+                                <p>商品價格與數量以客服人員告知為準</p>
+                            </div>
                         </div>
-                        <div class="item col-4">
-                            <a href="./item.html" class="init-link">
-                                <img src="/assets/example.png" class="img-thumbnail" alt="Image example" />
-                                <h3 class="name">金門酒廠 58度金門高粱酒 馬年限定包裝</h3>
-                                <p class="h5 price">優惠價：$<span class="p-value">530</span></p>
-                                <p class="h6 description">Kinmen Distillery 58% Kinmen Kaoliang Year of the Horse Limited Edition</p>
-                            </a>
+                        <div class="carousel-links">
+                            <!-- Images -->
                         </div>
-                        <div class="item col-4">
-                            <a href="./item.html" class="init-link">
-                                <img src="/assets/example.png" class="img-thumbnail" alt="Image example" />
-                                <h3 class="name">金門酒廠 58度金門高粱酒 馬年限定包裝</h3>
-                                <p class="h5 price">優惠價：$<span class="p-value">530</span></p>
-                                <p class="h6 description">Kinmen Distillery 58% Kinmen Kaoliang Year of the Horse Limited Edition</p>
-                            </a>
-                        </div>
-                        <div class="item col-4">
-                            <a href="./item.html" class="init-link">
-                                <img src="/assets/example.png" class="img-thumbnail" alt="Image example" />
-                                <h3 class="name">金門酒廠 58度金門高粱酒 馬年限定包裝</h3>
-                                <p class="h5 price">優惠價：$<span class="p-value">530</span></p>
-                                <p class="h6 description">Kinmen Distillery 58% Kinmen Kaoliang Year of the Horse Limited Edition</p>
-                            </a>
+                        <div class="contact">
+                            <ul>
+                                <li>
+                                    <i class="fa-solid fa-phone"></i>
+                                </li>
+                                <li>
+                                    <i class="fa-brands fa-line"></i>
+                                </li>
+                                <li>
+                                    <i class="fa-brands fa-facebook"></i>
+                                </li>
+                            </ul>
+                            <p>網站價格僅供參考，實際價格與數量請實際確認</p>
                         </div>
                     </div>
-                <nav aria-label="pages">
-                    <ul class="pagination">
-                        <li class="page-item">
-                            <a href="#" class="page-link">前頁</a>
-                        </li>
-                        <li class="page-item">
-                            <a class="page-link" href="#">1</a></li>
-                        <li class="page-item active">
-                            <a class="page-link" href="#" aria-current="page">2</a>
-                        </li>
-                        <li class="page-item">
-                            <a class="page-link" href="#">3</a>
-                        </li>
-                        <li class="page-item">
-                            <a class="page-link" href="#">後頁</a>
-                        </li>
-                    </ul>
-                </nav>
+                </div>
+                <div class="detail sagement">
+                    <h2 class="title">Detail</h2>
+                    <div class="content">
+                        <!-- 內容 -->
+                    </div>
+                </div>
+                <div class="related sagement">
+                    <h2 class="title">相關產品</h2>
+                    <div class="content">
+                        <div class="products row">
+                            <div class="item col-4">
+                                <a href="./item.html" class="init-link">
+                                    <img src="/assets/example.png" class="img-thumbnail" alt="Image example" />
+                                    <h3 class="name">金門酒廠 58度金門高粱酒 馬年限定包裝</h3>
+                                    <p class="h5 price">優惠價：$<span class="value">530</span></p>
+                                    <p class="h6 description">Kinmen Distillery 58% Kinmen Kaoliang Year of the Horse Limited Edition</p>
+                                </a>
+                            </div>
+                            <div class="item col-4">
+                                <a href="./item.html" class="init-link">
+                                    <img src="/assets/example.png" class="img-thumbnail" alt="Image example" />
+                                    <h3 class="name">金門酒廠 58度金門高粱酒 馬年限定包裝</h3>
+                                    <p class="h5 price">優惠價：$<span class="value">530</span></p>
+                                    <p class="h6 description">Kinmen Distillery 58% Kinmen Kaoliang Year of the Horse Limited Edition</p>
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
             </div>
         </div>
     </main>
@@ -149,6 +183,11 @@
         </p>
         <p class="mb-0"> <a href="#">回去</a> </p>
     </footer>
+    <nav class="sticky-bottom bg-danger">
+        <div class="container-fluid">
+            <p>Sticky bottom</p>
+        </div>
+    </nav>
     <!-- <aside></aside> -->
     <!-- https://www.wine0222.com/ -->
     <!-- https://www.wine0222.com/products/%E9%AB%98%E7%B2%B1ChineseSpirits_%E9%87%91%E9%96%80%E9%85%92%E5%BB%A0/1.htm -->
