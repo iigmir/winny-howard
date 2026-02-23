@@ -6,29 +6,20 @@
 .products .item {
     position: relative;
     .ribbon {
-        font-weight: bold;
-        color: #fff;
-        /* Go */
-        --f: .5em; /* control the folded part */
+        --ribbon-width: 48px;
         position: absolute;
-        top: 0;
-        right: 12px;
-        line-height: 1.8;
-        padding-inline: 1lh;
-        padding-bottom: var(--f);
-        border-image: conic-gradient(#0008 0 0) 51%/var(--f);
-        clip-path: polygon(
-            100% calc(100% - var(--f)),
-            100% 100%,
-            calc(100% - var(--f)) calc(100% - var(--f)),
-            var(--f) calc(100% - var(--f)),
-            0 100%,0 calc(100% - var(--f)),
-            999px calc(100% - var(--f) - 999px),
-            calc(100% - 999px) calc(100% - var(--f) - 999px)
-        );
-        transform: translate(calc((1 - cos(45deg))*100%), -100%) rotate(45deg);
-        transform-origin: 0% 100%;
-        background-color: #BD1550; /* the main color  */
+        top: calc(var(--ribbon-width) / 4);
+        right: calc(var(--ribbon-width) / 2);
+        width: var(--ribbon-width);
+        height: var(--ribbon-width);
+        transform: rotate(32deg);
+        line-height: calc(var(--ribbon-width) - 4px);
+        opacity: 0.8;
+        border-radius: 50%;
+        display: block;
+        text-align: center;
+        border: 2px #7a0317 solid;
+        color: #7a0317;
     }
     .name {
         max-width: 100%;
@@ -53,6 +44,7 @@
     }
     img {
         max-width: 100%;
+        /* width: 78vw; */
     }
 }
 
@@ -86,5 +78,11 @@
                 list-style: none;
             }
         }
+    }
+}
+
+@media screen and (max-width: 767px) {
+    .products .item .ribbon {
+        display: none;
     }
 }
