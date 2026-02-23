@@ -1,0 +1,44 @@
+/* Global styles */
+.init-link {
+    color: initial;
+    text-decoration: none;
+}
+.products .item {
+    .name {
+        max-width: 100%;
+        overflow: hidden;
+        text-overflow: ellipsis;
+        white-space: nowrap;
+        display: inline-block; 
+    }
+    .price {
+        color: #790216;
+        font-weight: 500;
+    }
+}
+/* #home-page {} */
+#item-page {
+    .product-info {
+        font-size: 1.5rem;
+        font-weight: bold;
+        .list-group-item {
+            --bs-list-group-color: rgb(121, 1, 21);
+        }
+    }
+    .contact {
+        ul {
+            margin: 1rem;
+            padding: 0;
+            display: flex;
+            gap: 0.5rem;
+            li {
+                list-style: none;
+            }
+        }
+    }
+    .jumbotron {
+        background-color: #7a0317;
+        --bs-emphasis-color: #EEEEEE;
+        font-family: serif;
+    }
+}
