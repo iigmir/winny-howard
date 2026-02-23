@@ -10,15 +10,11 @@
 </head>
 
 <body id="home-page">
-    <header class="sticky-top container bg-body">
-        <div class="lh-1 py-3">
-            <div class="row flex-nowrap justify-content-between align-items-center">
-                <div class="col-12 text-center">
-                    <a class="text-body-emphasis text-decoration-none" href="#">
-                        太武山商行Logo
-                    </a>
-                </div>
-            </div>
+    <header class="header sticky-top bg-body">
+        <div class="lh-1 py-3 text-center">
+            <a class="text-body-emphasis text-decoration-none" href="#">
+                太武山商行Logo
+            </a>
         </div>
         <div class="py-1 mb-3">
             <nav class="nav nav-underline justify-content-center">
@@ -30,11 +26,11 @@
             </nav>
         </div>
     </header>
+    <div class="jumbotron p-5 mb-4 text-center">
+        <h1 class="display-4">高粱酒</h1>
+        <p class="lead">選一個你最喜歡的酒類</p>
+    </div>
     <main class="container">
-        <div class="jumbotron p-5 mb-4 rounded text-center">
-            <h1 class="display-4">高粱酒</h1>
-            <p class="lead">選一個你最喜歡的酒類</p>
-        </div>
         <div class="row g-5">
             <div class="col-md-2">
                 <aside class="p-4">
@@ -108,7 +104,8 @@
             </div>
         </div>
     </main>
-    <footer class="text-body-secondary bg-body-tertiary container">
+    <!-- text-body-secondary bg-body-tertiary -->
+    <footer class="container">
         <div class="row">
             <div class="col-xs-12 col-md-4">
                 <a href="https://www.facebook.com/tai.wu.shan.shang.xing/" target="_blank">Facebook</a>
@@ -124,7 +121,7 @@
             <small>Built with <a href="https://getbootstrap.com/">Bootstrap</a> by <a href="https://blog.iigmir.idv.tw" target="_blank">@iigmir</a>.</small>
         </div>
     </footer>
-    <div id="alcohol-warning" class="alcohol-warning sticky-bottom container-fluid text-center p-2 bg-danger">
+    <div id="alcohol-warning" class="alcohol-warning sticky-bottom container-fluid text-center bg-danger">
         <img src="/assets/warning.svg" alt="禁止酒駕 酒後不開車 安全有保障" />
     </div>
 </body>

@@ -30,6 +30,17 @@
     }
 }
 
+/* Overwrite header nav link */
+.header {
+    .nav-underline .nav-link {
+        border-top: var(--bs-nav-underline-border-width) solid transparent;
+        border-bottom: none;
+    }
+    .nav-underline .nav-link.active, .nav-underline .show > .nav-link {
+        border-top-color: rgb(121, 1, 21);
+    }
+}
+
 /* #home-page {} */
 #item-page {
     .product-info {
