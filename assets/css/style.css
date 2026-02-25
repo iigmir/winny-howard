@@ -47,6 +47,16 @@
         /* width: 78vw; */
     }
 }
+footer {
+    .footer-list {
+        display: grid;
+        grid-template-columns: 1fr 1fr 1fr;
+        gap: 0.1em;
+        li {
+            list-style: none;
+        }
+    }
+}
 
 /* Overwrite header nav link */
 .header {
