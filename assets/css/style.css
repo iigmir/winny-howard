@@ -37,6 +37,10 @@
     background-color: #7a0317;
     color: #EEEEEE;
     font-family: serif;
+    .panel {
+        position: relative;
+        top: 70px;
+    }
 }
 .alcohol-warning {
     &.bg-danger {
