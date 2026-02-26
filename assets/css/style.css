@@ -37,6 +37,10 @@
     background-color: #7a0317;
     color: #EEEEEE;
     font-family: serif;
+    .panel {
+        position: relative;
+        top: 70px;
+    }
 }
 .alcohol-warning {
     &.bg-danger {
@@ -45,6 +49,16 @@
     img {
         max-width: 100%;
         /* width: 78vw; */
+    }
+}
+footer {
+    .footer-list {
+        display: grid;
+        grid-template-columns: 1fr 1fr 1fr;
+        gap: 0.1em;
+        li {
+            list-style: none;
+        }
     }
 }
 
