@@ -92,6 +92,23 @@ footer {
     .nav-underline .nav-link.active, .nav-underline .show > .nav-link {
         border-top-color: rgb(121, 1, 21);
     }
+    .nav-link {
+        position: relative;
+        &::before {
+            content: '';
+            left: 50%;
+            right: 50%;
+            position: absolute;
+            top: 0;
+            background: #790216;
+            height: 2px;
+            transition: all 0.3s ease;
+        }
+        &:hover::before {
+            left: 0;
+            right: 0;
+        }
+    }
 }
 
 /* #home-page {} */
