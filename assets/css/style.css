@@ -51,7 +51,28 @@
         /* width: 78vw; */
     }
 }
+.list-group {
+    --bs-list-group-item-padding-x: 0;
+    /* --bs-list-group-border-color */
+    /* --bs-list-group-item-padding-y: 0.5rem; */
+    .list-group-item {
+        &:hover {
+            --bs-list-group-border-color: #7a0317;
+        }
+        a {
+            display: block;
+            width: 100%;
+            color: #08303D;
+        }
+        a:hover {
+            color: #7a0317;
+            /* --bs-link-color-rgb: 122, 3, 23; */
+        }
+    }
+}
 footer {
+    margin: 0.1rem;
+    margin-top: 2rem;
     .footer-list {
         display: grid;
         grid-template-columns: 1fr 1fr 1fr;
